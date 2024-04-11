@@ -613,10 +613,6 @@ background-color: #404BBF;
 
 .modal-input-wrap {
     position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
 }
 
 .modal-lable {
