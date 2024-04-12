@@ -373,6 +373,23 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <form>
+                    <p class="footer-text-sub">Subscribe</p>
+                    <label for="footer-email" class="footer-lable-email"></label>
+                    <input type="email"
+                    class="footer-email"
+                    name="footer-email"
+                    id="footer-email"
+                    placeholder="E-mail">
+                    <button type="submit" class="footer-btn-sub">Subscribe
+                        <svg class="footer-btn-icon" width="24" height="20">
+                            <use href="./images/icons.svg#icon-icon-send">
+                            </use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>  
     </footer>
     <div class="backdrop">
@@ -409,13 +426,28 @@
                         </svg>
                     </div>
                 </div>
-                <div class="modal-field">
+                <div class="modal-field textarea">
                     <label for="user-comment" class="modal-lable">Comment</label><textarea
                     class="modal-text"
                     name="user-comment"
                     id="user-comment"
                     placeholder="Text input"></textarea>
                 </div>
+                <div class="modal-field checkbox">
+                    <input type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="modal-check visually-hidden"
+                    value="true">
+                    <label for="policy" class="check-text">
+                        <span class="modal-icon-wrap">
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the 
+                        <a class="policy-link" href="">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
             </form>
         </div>
     </div>
