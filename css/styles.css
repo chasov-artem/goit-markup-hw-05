@@ -564,6 +564,11 @@ background-color: #404BBF;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
 }
 
 .footer-email::placeholder {
@@ -573,6 +578,7 @@ background-color: #404BBF;
     letter-spacing: 0.04em;
     color: #fff;
     padding-left: 16px;
+    color #ffffff;
 }
 
 .footer-btn-sub {
@@ -580,7 +586,6 @@ background-color: #404BBF;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
@@ -592,6 +597,8 @@ background-color: #404BBF;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+    min-width: 165px;
+    border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -603,7 +610,7 @@ background-color: #404BBF;
 
 .footer-btn-icon {
     fill: #fff;
-
+    margin-left: 16px;
 }
 
 /* --------------------------------------------- */
