@@ -501,6 +501,7 @@ background-color: #404BBF;
 
 .footer-social-wrap {
     height: 80px;
+    margin-right: auto;
 }
 
 .footer-social-title {
@@ -544,6 +545,7 @@ background-color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .footer-email {
@@ -553,6 +555,7 @@ background-color: #404BBF;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    margin-right: 24px;
 }
 
 .footer-email::placeholder {
@@ -565,7 +568,7 @@ background-color: #404BBF;
 }
 
 .footer-btn-sub {
-    display-inline: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -575,10 +578,23 @@ background-color: #404BBF;
     width: 165px;
     height: 40px;
     background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.footer-btn-sub:hover,
+.footer-btn-sub:focus {
+    background-color: #404bbf;
+}
+
 .footer-btn-icon {
+    fill: #fff;
 
 }
 
