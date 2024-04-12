@@ -631,6 +631,8 @@ background-color: #404BBF;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -640,14 +642,13 @@ background-color: #404BBF;
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
-    border-radius: 4%;
+    border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -663,12 +664,21 @@ background-color: #404BBF;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
 }
 
-.modal-close-btn:hover {
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
     background-color: #404bbf;
-    fill: #fff;
+    fill: #ffffff;
+    border: none;
 }
 
 .modal-title {
@@ -736,8 +746,11 @@ background-color: #404BBF;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
-    padding-left: 16px;
-    padding-top: 8px;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-text:focus {
@@ -792,8 +805,8 @@ background-color: #404BBF;
 
 .modal-check:checked + .check-text span {
     background-color: #404bbf;
-    border: 1px solid #404bbf;
-    fill: #fff;
+    border: none;
+    fill: #F4F4FD;
 }
 
 
@@ -811,8 +824,9 @@ background-color: #404BBF;
 .submit-btn {
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
+    border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     font-family: "Roboto", sans-serif;
